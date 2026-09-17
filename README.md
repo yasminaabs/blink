@@ -4,9 +4,9 @@
 Vendeur, Client, Visiteur), inspirée d'une marketplace de vêtements où
 chaque client peut aussi devenir vendeur en créant sa propre boutique.
 
-Ce dépôt contient le **front-end** (React + Vite). Il consomme une API REST
-séparée (`http://localhost:4000/api/v1/...`) pour les articles, utilisateurs,
-boutiques, tailles, etc.
+Ce dépôt contient le **front-end** (React + Vite). Il consomme l'API REST du
+dossier voisin [`../server`](../server) (`http://localhost:4000/api/v1/...`)
+pour les articles, utilisateurs, boutiques, tailles, etc.
 
 > Projet académique réalisé dans le cadre du module *Méthodes de conception*
 > — Master 1 Génie Logiciel, Faculté des Sciences Exactes, Université de
@@ -45,8 +45,10 @@ boutiques, tailles, etc.
 ## Prérequis
 
 - Node.js ≥ 18
-- Le serveur API du projet lancé sur `http://localhost:4000` (pour les pages
-  déjà branchées à l'API : accueil / liste des produits)
+- Une base MySQL locale + le serveur API du projet ([`../server`](../server))
+  lancé sur `http://localhost:4000` (pour les pages déjà branchées à l'API :
+  accueil / liste des produits). Voir le README de `server/` pour le
+  démarrer.
 
 ## Installation et lancement
 
